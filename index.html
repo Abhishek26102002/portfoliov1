@@ -6,7 +6,46 @@
 <title>Abhishek Shaw /-Portfolio</title>
 <link rel=stylesheet href=./style.css>
 </head>
-<body class="min-h-screen flex flex-col font-sans">
+<body>
+<nav class="w-[100%] z-10 bg-[#0e0e10] flex justify-between items-center px-10 py-5">
+<div class="text-3xl font-bold text-white mousegrow" id=hero>&lt;ABHISHEK/&gt;</div>
+<div class=lg:hidden>
+<button id=menu-btn class="text-white focus:outline-none focus:ring-2 focus:ring-white">
+<svg class="w-8 h-8" xmlns=http://www.w3.org/2000/svg fill=none viewBox="0 0 24 24" stroke=currentColor>
+<path stroke-linecap=round stroke-linejoin=round stroke-width=2 d="M4 6h16M4 12h16m-7 6h7"/>
+</svg>
+</button>
+</div>
+<ul id=menu class="hidden flex-col space-y-4 lg:space-y-0 lg:space-x-6 lg:flex lg:flex-row lg:items-center text-gray-400 mousegrow">
+<li class="hover:text-white cursor-pointer"><a href=#hero>Start /&gt;</a></li>
+<li class="hover:text-white cursor-pointer"><a href=#work>Work /&gt;</a></li>
+<li class="hover:text-white cursor-pointer"><a href=#lab>Lab /&gt;</a></li>
+<li class="hover:text-white cursor-pointer"><a href=#about>About /&gt;</a></li>
+<li class="hover:text-white cursor-pointer"><a href=#contact>Contact /&gt;</a></li>
+</ul>
+</nav>
+<div class="flex-grow flex flex-col px-5 w-[100%] h-[100vh] pt-[170px] ps-[250px]" id=herosection>
+<div id=herotext>
+<p class="hover:text-white cursor-pointer">Start /&gt;</p>
+<div class=w-[100%]>
+<h1 class="text-4xl font-bold leading-tight">
+Hi, my name is <span class="text-purple-700 text-5xl mousegrow z-10">Abhishek Shaw</span>
+<br>
+<div class=typing-container>
+<span id=static-text class=text-3xl>I am a developer and I develop</span>
+<span id=dynamic-text class=text-3xl></span>
+<span class=cursor1></span>
+</div>
+</h1>
+</div>
+<p class="mt-5 text-gray-400 z-10">Let me show You...</p>
+</div>
+<div class=magnetic-button-container id=magbtncon>
+<a class="magnetic-button mousegrow" id=magbtncon2 href=#about>
+<span class=button-text>About Me</span>
+</a>
+</div>
+</div>
 <div class=area56>
 <ul class=circles56>
 <li></li>
@@ -25,53 +64,7 @@
 <div class=cursor-circle></div>
 <div class=cursor-dot></div>
 </div>
-<div class=magnetic-button-container>
-<a class="magnetic-button mousegrow" href=#about>
-<span class=button-text>About Me</span>
-</a>
-</div>
-<div class=scroll-indicator>
-<div class=circle></div>
-<div class=mouse-icon>
-<span class="scroll-text mousegrow">SCROLL</span>
-</div>
-</div>
-<div class="sections-container w-full h-full">
-<div class="section-1 flex flex-col items-center justify-center text-center w-full h-screen">
-<div class=side-linex></div>
-<header class="absolute top-0 left-0 w-full z-10">
-<nav class="flex justify-between items-center px-10 py-5">
-<div class="text-3xl font-bold text-white mousegrow" id=hero>&lt;ABHISHEK/&gt;</div>
-<ul class="flex space-x-6 text-gray-400 mousegrow">
-<li class="hover:text-white cursor-pointer"><a href=#hero>Start /&gt;</a></li>
-<li class="hover:text-white cursor-pointer"><a href=#work>Work /&gt;</a></li>
-<li class="hover:text-white cursor-pointer"><a href=#lab>Lab /&gt;</a></li>
-<li class="hover:text-white cursor-pointer"><a href=#about>About /&gt;</a></li>
-<li class="hover:text-white cursor-pointer"><a href=#contact>Contact /&gt;</a></li>
-</ul>
-</nav>
-</header>
-<div class="flex-grow b1 flex flex-col px-5">
-<p class="hover:text-white cursor-pointer">Start /&gt;</p>
-<div class="relative max-w-screen-md">
-<h1 class="text-4xl font-bold leading-tight">
-Hi, my name is <span class="text-purple-700 text-5xl mousegrow z-10">Abhishek Shaw</span>
-<br>
-<div class=typing-container>
-<span id=static-text class=text-3xl>I am a developer and I develop</span>
-<span id=dynamic-text class=text-3xl></span>
-<span class=cursor1></span>
-</div>
-</h1>
-</div>
-<p class="mt-5 text-gray-400 z-10">Let me show You...</p>
-</div>
-<div class="absolute inset-0 -z-10">
-<img style=width:100%;height:100vh src=./assets/images/bg.webp alt="">
-</div>
-</div>
-</div>
-<div class="bg-[#181425] text-white font-['Nunito']" id=work>
+<div class="bg-[#181425] text-white font-['Nunito'] w-full" id=work>
 <section class="max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16">
 <div class="w-[1px] hidden sm:block bg-[#1788ae] absolute top-0 bottom-0 left-1/2 -translate-x-1/2"></div>
 <h2 class="text-3xl sm:text-[40px] bg-[#181425] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-b-2 border-[#1788ae] mousegrow">
@@ -644,58 +637,57 @@ Check out my other projects like mini projects, animations, experiments, minigam
 </div>
 </div>
 </div>
-<section id=about class=bg-[#14121d]>
-<div class="bg-[#14121d] aboutdiv ms-[203px] pt-8">
-<div class="text-left px-10">
-<p class="text-gray-400 text-sm mb-2">About /&gt;</p>
-<pre class="w-[80%] text-base">
-  <span class=code-class>class</span> <span class=text-yellow-400>Abhishek</span> <span>{</span>
-    <span class=code-comment>// I can, because I did.</span>
-    <span class=code-comment>// My vast variety of skills is continuously expanding.</span>
-  
-    <span class=code-method>constructor</span><span>() {</span>
-      <span class=code-key>this.name</span> = <span class=code-value>'Abhishek Shaw'</span>
-      <span class=code-key>this.dayOfBirth</span> = <span class=code-value style=color:orange>26102002</span>
-      <span class=code-key>this.email</span> = <span class=code-value>'abhishek1shaw2@gmail.com'</span>
-    <span>}</span>
-  
-    <span class=code-method>workExperience</span><span>() {</span>
-      <span>return [</span>
-      <span class=code-value>{ '2023-2024' : 'Web Dev Intern at Prodigy Infotech' }</span>,
-      <span class=code-value>{ '2024-now' : 'Full-stack Developer intern at CodeClouds' }</span>,
-  
-      <span>]</span>
-    <span>}</span>
-
-    <span class=code-method>education</span><span>() {</span>
-      <span>return [</span>
-        <span class=code-value>{ '2013-2018' : 'Kankinara Arya Vidyalaya (10th)' }</span>,
-        <span class=code-value>{ '2018-2020' : 'Jagatdal Chasma-I-Rahmat High School (12th)' }</span>
-        <span class=code-value>{ '2021-now' : 'MCKV Institute of Engineering , B.Tech (IT)' }</span>
-      <span>]</span>
-    <span>}</span>
-    
-    <span class=code-method>Skills</span><span>() {</span>
-      <span>return [</span>
-        <span class=code-value>{ 'HTML/CSS/JS', 'Node.js', 'Bootstrap/Tailwind', 'React/Vite','npm/yarn'</span>,
-        <span class=code-value>  ,'Web Sockets','PHP', 'MySQL/MongoDB/ORM', 'Wordpress', 'Shopify', 'TypeScript '} <span class=cursor1></span></span>,
-      <span>]</span>
-    <span>}</span>
-  <span>}</span>
- 
-                </pre>
+<div id=about class="bg-[#14121d] px-4 py-8 md:py-12 lg:py-16">
+<div class="bg-[#14121d] w-full md:w-[80%] lg:w-[80%] mx-auto pt-8" id=aboutdiv>
+<div class="text-left px-4 sm:px-6 lg:px-10">
+<p class="text-gray-400 text-sm mb-4 ms-[5%]">About /&gt;</p>
+<pre class="w-full text-base text-gray-300 overflow-x-auto">
+        <span class=code-class>class</span> <span class=text-yellow-400>Abhishek</span> <span>{</span>
+          <span class=code-comment>// I can, because I did.</span>
+          <span class=code-comment>// My vast variety of skills is continuously expanding.</span>
+        
+          <span class=code-method>constructor</span><span>() {</span>
+            <span class=code-key>this.name</span> = <span class=code-value>'Abhishek Shaw'</span>
+            <span class=code-key>this.dayOfBirth</span> = <span class=code-value style=color:orange>26102002</span>
+            <span class=code-key>this.email</span> = <span class=code-value>'abhishek1shaw2@gmail.com'</span>
+          <span>}</span>
+        
+          <span class=code-method>workExperience</span><span>() {</span>
+            <span>return [</span>
+            <span class=code-value>{ '2023-2024' : 'Web Dev Intern at Prodigy Infotech' }</span>,
+            <span class=code-value>{ '2024-now' : 'Full-stack Developer intern at CodeClouds' }</span>,
+        
+            <span>]</span>
+          <span>}</span>
+      
+          <span class=code-method>education</span><span>() {</span>
+            <span>return [</span>
+              <span class=code-value>{ '2013-2018' : 'Kankinara Arya Vidyalaya (10th)' }</span>,
+              <span class=code-value>{ '2018-2020' : 'Jagatdal Chasma-I-Rahmat High School (12th)' }</span>
+              <span class=code-value>{ '2021-now' : 'MCKV Institute of Engineering , B.Tech (IT)' }</span>
+            <span>]</span>
+          <span>}</span>
+          
+          <span class=code-method>Skills</span><span>() {</span>
+            <span>return [</span>
+              <span class=code-value>{ 'HTML/CSS/JS', 'Node.js', 'Bootstrap/Tailwind', 'React/Vite','npm/yarn'</span>,
+              <span class=code-value>  ,'Web Sockets','PHP', 'MySQL/MongoDB/ORM', 'Wordpress', 'Shopify', 'TypeScript '} <span class=cursor1></span></span>,
+            <span>]</span>
+          <span>}</span>
+        <span>}</span>
+            </pre>
 </div>
 </div>
-</section>
-<section class="body-font w-full bg-[#0e0e10] text-gray-400 shadow-gray-900" id=contact>
-<div class="bg-[#0e0e10] relative w-full pt-10 pl-64 flex flex-col">
-<header>
-<div class=title style=color:#dbd7ce>Contact /></div>
-</header>
+</div>
+<div class="pt-6 relative w-[100%] h-[105vh] bg-[#0e0e10] text-gray-400 shadow-gray-900">
+<div class=h-[70px]>
+<div class="flex flex-col absolute left-[20%]">
+<span class=title style=color:#dbd7ce>Contact /></span>
 <h2 class="find-me text-sm ps-1">Find me on:</h2>
 </div>
-<div class="w-3/5 pt-16 pb-24 flex flex-col items-center justify-center ml-[239px]">
-<div class="grid grid-cols-6 gap-5 mb-10">
+</div>
+<div class="relative h-[50px] mt-6 mb-6">
+<div id=socialContact class="justify-center left-[20%] text-center md:grid-cols-3 gap-3 flex flex-row absolute">
 <a href=www.linkedin.com/in/abhishek-shaw-0528a7260 class="social-link mousegrow">
 <span class=icon><img width=25 height=25 src=https://img.icons8.com/fluency/25/linkedin.png alt=linkedin></span>Linkdine
 </a>
@@ -715,11 +707,13 @@ Check out my other projects like mini projects, animations, experiments, minigam
 <span class=icon><img width=25 height=25 src=https://img.icons8.com/color/25/twitter--v1.png alt=twitter--v1></span>Twitter
 </a>
 </div>
-<div class="mb-12 flex w-full flex-col text-center bg-[#0e0e10]">
-<p class="mx-auto text-base leading-relaxed lg:w-2/3">Feel free to reach out to me! Whether you have a question, feedback, or a collaboration proposal, I'd love to hear from you.
+</div>
+<div id=conatctp class="relative h-[50px]">
+<p id=contactpp class="left-[21%] w-[40%] absolute">Feel free to reach out to me! Whether you have a question, feedback, or a collaboration proposal, I'd love to hear from you.
 </p>
 </div>
-<form id=contactForm class="-m-2 flex flex-wrap w-[70%]">
+<div class="flex flex-col items-center justify-center">
+<form id=contactForm class="pt-5 pb-5 pe-[20%] flex flex-wrap w-[60%]">
 <div class="w-1/2 p-2">
 <div class=relative>
 <input id=name name=name class="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" placeholder=Name>
@@ -744,22 +738,30 @@ Check out my other projects like mini projects, animations, experiments, minigam
 <div class="h-2 w-2 bg-white rounded-full animate-bounce [animation-delay:-0.15s]"></div>
 <div class="h-2 w-2 bg-white rounded-full animate-bounce"></div>
 </div>
-<div class="w-full p-2">
+<div class="flex flex-row gap-3 w-[100%]"></div>
+<div class=p-2>
 <button type=submit class="inline-block bg-purple-700 text-white py-3 px-6 rounded-full font-medium tracking-wide uppercase shadow-[0_0_20px_rgba(109,40,217,0.4)] transition-all duration-300 ease-in-out hover:bg-purple-600 hover:shadow-[0_0_30px_rgba(109,40,217,0.6)] hover:-translate-y-0.5 mousegrow">Get in touch</button>
 </div>
-</form>
-<div class="absolute left-[72%] mt-[240px] overflow-hidden p-[130px] mbbbb2">
-<a href=./assets/Abhishek_Shaw_IT_2025.pdf download=Abhishek_Shaw_IT_2025.pdf class="mbbbb3 relative w-[150px] h-[150px] bg-[#a131b5] border-none rounded-full text-white text-lg font-bold overflow-hidden flex justify-center items-center transition-transform duration-200 ease-in-out cursor-none mousegrow">
+<div class="p-2 hidden" id=downoadbtn2>
+<a href=./assets/Abhishek_Shaw_IT_2025.pdf download=Abhishek_Shaw_IT_2025.pdf class="inline-block bg-purple-700 text-white py-3 px-[10px] rounded-full font-medium tracking-wide uppercase shadow-[0_0_20px_rgba(109,40,217,0.4)] transition-all duration-300 ease-in-out hover:bg-purple-600 hover:shadow-[0_0_30px_rgba(109,40,217,0.6)] hover:-translate-y-0.5 mousegrow" id=downloadcontaier>
+<span class=button-text>Download CV</span>
+</a>
+</div></form>
+</div>
+<div class="absolute mbbbb2 w-[40%] h-[500px] top-[35%] left-[59%]" id=downloadcvbtn>
+<div class="absolute right-[20%] bottom-[24%]">
+<a href=./assets/Abhishek_Shaw_IT_2025.pdf download=Abhishek_Shaw_IT_2025.pdf class="mbbbb3 relative w-[150px] h-[150px] bg-[#a131b5] border-none rounded-full text-white text-lg font-bold overflow-hidden flex justify-center items-center transition-transform duration-200 ease-in-out cursor-none mousegrow" id=downloadcontaier>
 <span class=button-text>Download CV</span>
 </a>
 </div>
 </div>
-</section>
+</div>
+
 <div class="bg-green-500 py-2 px-4 rounded-md text-white text-center fixed bottom-14 right-14 flex gap-4 hidden" id=toast>
 <p>Success! Sending Message.</p>
 <span class="cursor-pointer font-bold" onclick="return this.parentNode.remove()"><sup>X</sup></span>
 </div>
-<footer class="flex ps-[45%] pb-5 center bg-[#0e0e10]">
+<footer class="bg-[#0e0e10] flex text-center justify-center">
 © Made with &lt;/&gt; by Abhishek. 2025.
 </footer>
 </body>
